@@ -1,0 +1,154 @@
+@import './colores';
+@import './mixins';
+@import './estiloMenu';
+@import './estiloFooter';
+@import './galeria';
+@import './animacion';
+
+$unidad: 100px;
+
+.titulo {
+  color: $brown;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 10px;
+  margin: ($unidad/2) 0 ($unidad/5);
+}
+
+.estiloHeader{
+  display: grid;
+  @include gridColumnas(2);
+  align-items: center;
+}
+
+main{
+  margin-bottom: $unidad;
+}
+
+.contenedorLogo {
+  background-image: url(../imagenes/durban.jpeg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: ($unidad*2);
+}
+
+.contenedorImagen{
+  background-image: url('../imagenes/cortina1.jpeg');
+  background-size: 100%;
+  height: ($unidad*2);
+}
+
+#carousel {
+  width: 100%;
+  margin: 0 auto;
+  height: ($unidad*4);
+  overflow: hidden;
+}
+
+.botonInstagram{
+  margin: 20px auto 0;
+}
+.botonContacto{
+  margin: 20px auto 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+#letra {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.subtituloGris {
+  font-size: 30px;
+  color: rgb(209, 156, 106);
+  margin-top: ($unidad/2);
+  margin-bottom: ($unidad/3.33);
+}
+
+.formulario {
+  flex-direction: column-reverse;
+
+  .formulario__firma {
+    font-size: medium;
+    font-style: italic;
+  }
+}
+
+.boton{
+  background-color: $gray;
+  color:white;
+}
+
+.homeGrid {
+  display: grid;
+  @include gridColumnas(2);
+  justify-items: center;
+  column-gap: ($unidad/3.33);
+}
+.serviciosGrid {
+  display: grid;
+  @include gridColumnas(1);
+  justify-items: center;
+  column-gap: ($unidad/3.33);
+}
+
+.card-img-top {
+  max-width: $unidad;
+}
+
+.fondo, body {
+  background-color: $fondo;
+}
+
+.contactanos{
+  display: grid;
+  grid-template-columns: $unidad $unidad;
+}
+
+@media screen and (min-width: 768px) {
+  .homeGrid {
+    @include gridColumnas(4);
+  }
+
+  .serviciosGrid {
+    @include gridColumnas(3);
+  }
+
+  .contenedorImagen {
+    height: $unidad*4;
+  }
+
+  #carousel {
+    width: 50%;
+  }
+
+  .estiloHeader {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contenedorLogo {
+    background-size: 55%;
+  }
+
+  .titulo {
+    margin: $unidad 0 ($unidad/2);
+  }
+
+  .formulario {
+    height: $unidad*4;
+    flex-direction: row;
+  }
+}

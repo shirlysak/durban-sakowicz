@@ -1,0 +1,40 @@
+.menu {
+  font-size: 18px;
+
+  .menu__item {
+    margin: 0 10px;
+    display: block;
+  }
+
+  .menu__link {
+    color: gray;
+    text-decoration: none;
+  }
+
+  .menu__link:hover {
+    color: black;
+    transition: all 0.25s;
+    font-weight: bold;
+  }
+
+  .menu__link--active {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    font-size: 24px;
+  }
+
+  .menu__item {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    font-size: medium;
+  }
+}

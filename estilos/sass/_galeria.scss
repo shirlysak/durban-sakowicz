@@ -1,0 +1,19 @@
+.gallery {
+  .gallery__list {
+    justify-content: space-evenly;
+
+    .gallery__item  {
+      margin-bottom: 24px;
+
+      .item__img--rounded {
+        border-radius: 10mm;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery__list {
+    justify-content: space-between;
+  }
+}

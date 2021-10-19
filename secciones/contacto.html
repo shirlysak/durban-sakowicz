@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Durban cortinas a medida - Formulario de contacto">
+    <meta name="keywords" content="cortinas, deco, decoracion, casa, renovar, medicion, diseño, blackout, seda">
+    <title>Formulario de contacto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+  </head>
+
+  <body id="letra">
+    <header class="estiloHeader">
+      <div class="contenedorLogo"></div>
+      <nav class="menu">
+        <ul class="menu__list text-center">
+          <li class="menu__item">
+            <a class="menu__link" href="../index.html">Inicio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./servicios.html">
+              Nuestros servicios
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./imagenes.html">
+              Galeria de imagenes
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./materiales.html">
+              Nuestros materiales
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="./contacto.html">
+              Contactanos
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="subtituloGris text-center">Dejanos tu mensaje y te responderemos a la brevedad</h1>
+      <section>
+        <article class="formulario d-flex align-items-center justify-content-around">
+          <form class="col-10 col-md-5 formulario__form">
+            <div class="form__field">
+              <label for="nombre" class="form-label field__label">Nombre y Apellido</label>
+              <input type="text" class="form-control field__input" id="nombre" required>
+            </div>
+            <div class="mb-3 form__field">
+              <label for="email" class="form-label field__label">Ingrese su mail</label>
+              <input type="email" class="form-control field__input" id="email" placeholder="nombre@ejemplo.com" required>
+            </div>
+            <div class="mb-3 form__field">
+              <label for="mensaje" class="form-label field__label">Deje su mensaje</label>
+              <textarea class="form-control field__input" id="mensaje" rows="3" required></textarea>
+            </div>
+            <div class="col-12 form__field">
+              <button class="btn boton field__button" type="submit">Enviar</button>
+            </div>
+          </form>
+          <div class="col-11 col-md-5 formulario__firma text-center">
+            <p class="firma__text">Somos dos arquitectas que nos conocimos en la universidad y siempre tuvimos especial preferencia por el cortinado. Creemos que el mismo otorga a los ambientes un perfil sofisticado y a la vez acogedor. Desde hace 2 años nos dedicamos a la fabricación de cortinas de interiores a medida, brindando asesoramiento profesional personalizado para oficinas y hogares; logrando las mejores soluciones decorativas y funcionales para cada ambiente.</p>
+            <p class="firma__text"><strong>Equipo Durban</strong> </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <span>
+          <a class="footer__link" href="http://www.instagram.com/cortinas.durban" target="_blank">
+            <img src="../imagenes/igdurban.png" alt="instagram" height="30">
+          </a>
+        </span>
+        <span>
+          <a class="footer__link" href="https://www.facebook.com/Durban-cortinas-101007141797045"target="_blank">
+            <img src="../imagenes/facebook.png" alt="facebook" height="30">
+          </a>
+        </span>
+      </div>
+      <div>
+        <h3 class="footer__text">© 2021 - 1146780874 - Ciudad Autónoma de Buenos Aires - durban.cortinas@gmail.com</h3>
+      </div>
+    </footer>
+
+  </body>
+</html>
