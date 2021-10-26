@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
 .menu {
   font-size: 18px; }
   .menu .menu__item {
@@ -45,9 +46,9 @@
 .gallery .gallery__list {
   justify-content: space-evenly; }
   .gallery .gallery__list .gallery__item {
-    margin-bottom: 24px; }
+    margin-bottom: 20px; }
     .gallery .gallery__list .gallery__item .item__img--rounded {
-      border-radius: 10mm; }
+      border-radius: 12mm; }
 
 @media screen and (min-width: 1024px) {
   .gallery__list {
@@ -66,6 +67,10 @@
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite; }
+
+.gallery__item {
+  overflow: hidden;
+  border-radius: 12mm; }
 
 @keyframes aparecer {
   0% {
@@ -111,7 +116,7 @@ main {
 #carousel {
   width: 100%;
   margin: 0 auto;
-  height: 400px;
+  height: 600px;
   overflow: hidden; }
 
 .botonInstagram {
@@ -127,14 +132,14 @@ li {
   display: inline; }
 
 #letra {
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: "Spinnaker", sans-serif; }
 
 .centrar {
   text-align: center; }
 
 .subtituloGris {
   font-size: 30px;
-  color: #d19c6a;
+  color: #777;
   margin-top: 50px;
   margin-bottom: 30.03003px; }
 
@@ -143,10 +148,6 @@ li {
   .formulario .formulario__firma {
     font-size: medium;
     font-style: italic; }
-
-.boton {
-  background-color: #506D84;
-  color: white; }
 
 .homeGrid {
   display: grid;

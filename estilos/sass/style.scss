@@ -1,4 +1,5 @@
 @import './colores';
+@import './font';
 @import './mixins';
 @import './estiloMenu';
 @import './estiloFooter';
@@ -42,7 +43,7 @@ main{
 #carousel {
   width: 100%;
   margin: 0 auto;
-  height: ($unidad*4);
+  height: ($unidad*6);
   overflow: hidden;
 }
 
@@ -62,8 +63,10 @@ li {
 }
 
 #letra {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Spinnaker", sans-serif;
 }
+
+
 
 .centrar {
   text-align: center;
@@ -71,7 +74,7 @@ li {
 
 .subtituloGris {
   font-size: 30px;
-  color: rgb(209, 156, 106);
+  color: #777;
   margin-top: ($unidad/2);
   margin-bottom: ($unidad/3.33);
 }
@@ -85,10 +88,7 @@ li {
   }
 }
 
-.boton{
-  background-color: $gray;
-  color:white;
-}
+
 
 .homeGrid {
   display: grid;
