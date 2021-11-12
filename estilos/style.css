@@ -149,6 +149,9 @@ li {
     font-size: medium;
     font-style: italic; }
 
+.rollerImg {
+  max-width: 500px; }
+
 .homeGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
